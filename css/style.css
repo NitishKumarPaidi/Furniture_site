@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+    /* font-family: 'Festive', cursive; */
+}
+.navbar{
+    width: 100%;
+}
+.navbar .main_nav{
+    padding: 10px 30px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main_nav .logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.main_nav .logo a span{
+    color: forestgreen;
+}
+.main_nav .buy_btn button{
+    padding: 6px 15px;
+    background: rgb(92, 153, 0);
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.main_nav .buy_btn button:hover{
+    background: rgb(75, 218, 62);
+}
+
+.navbar .small_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 13%;
+    cursor: pointer;
+}
+.small_navbar h1{
+    font-size: 2.4rem;
+    color: rgb(243, 134, 91);
+}
+.small_navbar h1 span{
+    color: rgb(87, 87, 87);
+}
+.small_navbar .buy_btn button{
+    padding: 10px 40px;
+    background: rgb(255, 0, 0);
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.small_navbar .buy_btn button:hover{
+    background: rgb(202, 0, 0);
+}
+
+
+/*------------- navbar container---------- */
+
+.navbar_container{
+    background-image:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),url("../images/bgimage.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+}
+.navbar_container h1{
+    color: #fff;
+    font-size: 2.4rem;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+.navbar_container h4{
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.navbar_container .btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.btns a{
+    margin: 0 13px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 0.9rem;
+    border-radius: 30px;
+    transition: 1s;
+}
+.btns a.demobtn{
+    padding: 15px 30px;
+}
+.btns a.ftrbtn{
+    padding: 15px 43px;
+}
+
+.btns a:hover{
+    background: rgb(243, 134, 91);
+    border: rgb(243, 134, 91);
+    transform: scale(1.05);
+}
+
+
+/*----------------- demo section------------- */
+
+.demo_section{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #ddd;
+}
+.demo_section .demo_sec_main_heading{
+    font-size: 2.5rem;
+    color: rgb(255, 174, 0);
+    margin-top: 100px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.demo_section .demo_sec_main_heading::after{
+    position: absolute;
+    content: '';
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(102, 101, 101);
+    width: 50px;
+    height: 0.2px;
+
+}
+.demo_section .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    transition: 0.7s;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.container .demo_sec_container{
+    flex: 30%;
+    max-width: 30%;
+    margin: 20px;
+    position: relative;
+}
+.container .demo_sec_container h2{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+.container .demo_sec_container img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.demo_section .container .demo_sec_container:hover .overlay{
+    bottom: 0;
+    height: 90%;
+    opacity: 0.8;
+}
+.container .demo_sec_container .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(243, 134, 91);
+    display: flex;
+    align-items: center;
+}
+.overlay p{
+    text-align: center;
+    position: absolute;
+    font-family: 'Festive', cursive;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    opacity: 1;
+    font-size: 1.5rem;
+}.overlay p i{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+
+/* ----------feature section------- */
+
+.feature_sec{
+    padding-top: 100px;
+    text-align: center;
+    background-color: #eee;
+    padding-bottom: 100px;
+}
+.feature_sec h1{
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+    color: rgb(255, 174, 0);
+}
+.feature_sec p{
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: #010;
+    position: relative;
+}
+.feature_sec p::after{
+    content: '';
+    width: 50px;
+    height: 0.2px;
+    background-color: rgb(102, 101, 101);
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.some_feature_stuff{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+}
+.some_feature_stuff span{
+    flex-basis: 30%;
+    text-align: left;
+    line-height: 50px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+
+/*---------------- FORUM SECTION------------ */
+
+.forum{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 0;
+    background-color: rgb(238, 238, 238);
+}
+.forum img{
+    width: 200px;
+}
+.forum h1{
+    font-weight: 300;
+    font-family: poppins;
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+}
+.forum p{
+    font-size: 18px;
+    margin-bottom: 30px;
+    padding: 0 30px;
+}
+.forum .btn{
+    color: white;
+    background-color: #000;
+    padding: 15px 25px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+/* ---------------icon section---------------- */
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0;
+    background-color: rgb(109, 109, 109);
+    color: #fff;
+}
+.icons h1{
+    font-size: 2.5rem;
+}
+.icons h1 span{
+    color: rgb(255, 174, 0);
+}
+.icons .main_icons{
+    color: #fff;
+    margin-top: 20px;
+}
+.icons .main_icons i{
+    margin: 0 3px;
+    font-size: 15px;
+    transition: 0.5s;
+    padding: 8px;
+    border-radius: 50%;
+}
+.icons .main_icons i:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+/* ---------footer---------- */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 200px;
+    background-color: #000;
+    color: #fff;
+}
+footer span{
+    color: #f00;
+}
+
+
+
+
+@media only screen and (max-width: 991px){
+
+    /*-- navbar container-- */
+    .navbar_container h1{
+        font-size: 2.2rem;
+    }
+    .navbar_container h4{
+        font-size: 1.1rem;
+    }
+
+    /* ----demosection----- */
+    .demo_section{
+        width: 100%;
+    }
+    .demo_section .demo_sec_main_heading{
+        font-size: 2.3rem;
+        position: relative;
+    }
+    .demo_section .container{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .container .demo_sec_container{
+        flex: 40%;
+        max-width: 40%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .navbar .small_navbar{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .small_navbar h1{
+        font-size: 2.3rem;
+    }
+    .small_navbar .buy_btn button{
+        margin-top: 20px;
+    }
+
+    /*------------- navbar container----------- */
+
+    .navbar_container h1{
+        padding: 0px 50px;
+    }
+    .navbar_container h4{
+        letter-spacing: 5px;
+        padding: 0px 150px;
+    }
+    .navbar_container .btns{
+        flex-direction: column;
+        transition: 0.5s;
+    }
+    .btns a.ftrbtn{
+        margin-top: 30px;
+        padding: 15px 51px;
+    }
+
+    /*----------- demo section--------- */
+
+    .demo_section .container{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .container .demo_sec_container{
+        flex: 100%;
+        max-width: 100%;
+    }
+    .demo_section .container .demo_sec_container:hover .overlay{
+        height: 93%;
+    }
+
+
+    /* -----------feature section---------- */
+
+    .feature_sec{
+        text-align: center;
+    }
+    .feature_sec h1{
+        font-size: 2.3rem;
+    }
+    .feature_sec p{
+        font-size: 1.1rem;
+        padding: 0 130px;
+    }
+    .some_feature_stuff{
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .some_feature_stuff span{
+        flex-basis: 100%;
+    }
+
+    /*----------- forum section---------- */
+
+    .forum{
+        text-align: center;
+        padding: 50px 100px;
+    }
+    .forum img{
+        width: 200px;
+    }
+
+    /*-------- footer section------- */
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 100px;
+    }
+    footer p{
+        margin-bottom: 20px;
+    }
+    footer span{
+        color: #f00;
+    }
+}
